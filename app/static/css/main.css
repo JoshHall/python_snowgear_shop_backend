@@ -1,0 +1,166 @@
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: #21283C;
+  }
+
+nav li > a{
+  color: white;
+  text-decoration: none;
+}
+
+nav li > a:hover{
+  color: rgba(38,50,56,.7);
+  text-decoration: none;
+}
+
+.active{
+  font-weight: bold;
+}
+
+/* Hamburger Menu changes start */
+ul.navbar-nav.mr-auto {
+    padding-left: 2.8vw;
+    width: 10vw;
+    background-color: #21283C;
+}
+
+.collapse.show {
+  margin-left:72%;
+}
+
+.fixed-top {
+  height: 10vh;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(230,240,239);
+    margin-left: 90%;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(230,240,239, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/* Hamburger changes end */
+
+.footer-text {
+  color: white;
+}
+
+.logo-container {
+  width: 13vh;
+  height: 13vh;
+  background-color: white;
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  left: 3vw;
+}
+
+.logo-container > img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.collapse {
+  padding-left: 9vw;
+}
+.banner-img-container {
+  margin-top: 8vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.top-margin-lg {
+  margin-top: 100px;
+}
+
+.top-margin-sm {
+  margin-top: 25px;
+  visibility: visible;
+}
+
+.featured-products-row {
+  text-align: center;
+  padding: 1vh 0 1vh 40vw;
+}
+
+.featured-text, .featured-shop-all {
+  text-align: center;
+  display: inline-block;
+  color: #4e6471;
+}
+
+.featured-shop-all {
+  font-size: small;
+  margin-top: 3vh;
+  margin-left: 26vw;
+  text-decoration: underline;
+}
+
+.carousel-control-prev-icon {
+
+}
+
+.featured-control-prev {
+  width: 7vw;
+}
+
+
+.carousel-control-next-icon {
+
+}
+.featured-control-next {
+  width: 7vw;
+}
+.card-container {
+  width: 14.5vw;
+}
+
+.card {
+  padding: 0 2vw 1vh 2vw;
+  border: none;
+}
+
+.product-img {
+  display: block;
+  margin: 25px auto;
+  width: 100%;
+}
+
+.card-title {
+  margin-top: 16vh;
+  font-size: 80%;
+  color: #4e6471;
+}
+
+.card-img-container {
+  width: 10vw;
+  height: 20vh;
+}
+
+.card-subtitle {
+  font-size: 70%;
+  color: #4e6471;
+}
+
+.card > button {
+  display: block;
+  margin: 25px auto;
+  width: 80%;
+}
+
+.contact-carousel-container {
+  margin-top: 3vh;
+}
+
+/* farthest right hidden item must be abso position for animations */
+.carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+}
