@@ -105,7 +105,7 @@ def filter():
 
         for product in result.sizes:
             sizes.append(product.size)
-            
+
         product = {
         'product_id': result.product_id,
         'name': result.name,
@@ -135,3 +135,24 @@ def delete():
 
     except:
         return jsonify({ 'error': 'Product not removed, try again' })
+
+# @app.route('/pay/', methods=['GET', 'POST'])
+# def pay():
+#     amount = request.args.get('amount')
+#     email = request.form['stripeEmail']
+#
+#     # create a stripe customer using stripes class
+#     customer = stripe.Customer.create(
+#         email=email,
+#         source=request.form['stripeToken']
+#     )
+#
+#     # create a stripe charge
+#     charge = stripe.Charge.create(
+#         customer=customer.id,
+#         amount=amount,
+#         currency='usd',
+#         description='This was a test purchase for some test products'
+#     )
+#
+#     return redirect(url_for('thanks', amount=amount, email=email))
