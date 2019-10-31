@@ -8,4 +8,4 @@ class Config(object):
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'app.db')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('https://git.heroku.com/snow-gear-shop-backend.git') or 'sqlite:///' + os.path.join(basedir, 'app.db')
